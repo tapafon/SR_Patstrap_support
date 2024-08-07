@@ -33,14 +33,32 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>E:\Games\SynthRiders\SynthRiders_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="CoreOSC">
+          <HintPath>E:\CoreOSC-master\CoreOSC\bin\Debug\netstandard2.0\CoreOSC.dll</HintPath>
+        </Reference>
+        <Reference Include="MelonLoader">
+          <HintPath>E:\Games\SynthRiders\MelonLoader\net6\MelonLoader.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
+        <Reference Include="UnityEngine">
+          <HintPath>E:\Games\SynthRiders\SynthRiders_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>E:\Games\SynthRiders\SynthRiders_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Class1.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="README.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

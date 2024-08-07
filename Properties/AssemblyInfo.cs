@@ -1,5 +1,10 @@
-﻿using System.Reflection;
+﻿using MelonLoader;
+using System.Reflection;
 using System.Runtime.InteropServices;
+using SR_Patstrap_support;
+
+[assembly: MelonInfo(typeof(Class1), "SR_Patstrap_support", "0.0.1", "tapafon")]
+[assembly: MelonGame("Kluge Interactive", "SynthRiders")]
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
