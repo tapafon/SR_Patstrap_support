@@ -1,5 +1,5 @@
 # SR_Patstrap_support
-A free Melon mod for Synth Riders which adds [Patstrap](https://github.com/danielfvm/Patstrap) support to the game. Still WIP *(Work In Progress)*, but now it got to useable state.
+A free Melon mod for Synth Riders which adds [Patstrap](https://github.com/danielfvm/Patstrap) support to the game.
 
 How it works? It makes your Patstrap vibrate when you walk into the wall, that's it!
 
@@ -13,7 +13,7 @@ This mod is made for PCVR version of Synth Riders (both Steam and Oculus). It wo
 
 Of course, your game copy has to be modded. If it isn't, [SynthRiderz wiki](https://wiki.synthriderz.com/en/guides/installing-mods) is the best place to get started.
 
-To install it, you have to download both *.dll files and drag it into `%SynthRiders_directory%/Mods/` folder. The second file is CoreOSC library, which is used by this mod, and which is distributed with it for your convenience.
+To install it, you have to download both *.dll files and drag `SR_Patstrap_support.dll` into `%SynthRiders_directory%/Mods/` folder. The second file is `CoreOSC.dll` library, which is used by this mod, and which is distributed with it for your convenience. You should drag it into `%SynthRiders_directory%/UserLibs/` folder.
 
 When you bootup the game, `VRChat connection` in PatStrap server should turn blue. If it is, congrats.
 

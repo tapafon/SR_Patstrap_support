@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using SR_Patstrap_support;
 
-[assembly: MelonInfo(typeof(Class1), "SR_Patstrap_support", "0.0.1", "tapafon")]
+[assembly: MelonInfo(typeof(Class1), "SR_Patstrap_support", "1.0.0", "tapafon")]
 [assembly: MelonGame("Kluge Interactive", "SynthRiders")]
 
 // General Information about an assembly is controlled through the following 

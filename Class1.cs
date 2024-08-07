@@ -15,6 +15,9 @@ namespace SR_Patstrap_support
         string ipAddress = "127.0.0.1";
 
         float previousFailWalls = 0f;
+
+        bool iteration = true;
+        short iteration2 = 256;
         
         public override void OnInitializeMelon()
         {
@@ -24,11 +27,14 @@ namespace SR_Patstrap_support
 
         public override async void OnFixedUpdate()
         {
-            System.Random random = new System.Random();
             Address pl = new Address("/avatar/parameters/pat_left");
             Address pr = new Address("/avatar/parameters/pat_right");
             Address pd = new Address("/avatar/parameters/dummy");
-            float x = (float) random.NextDouble() * 0.5F + 0.25F; //required, to simulate pat for PatStrap server so it will activate motors
+            float x;
+            if (iteration) // "emulating" headpats for server
+                x = 0f;
+            else
+                x = 1f;
             object[] obj = new object[] { x };
             
             var msg1 = new OscMessage(pl, obj);
@@ -40,14 +46,21 @@ namespace SR_Patstrap_support
             if (gameControlManagers.Length > 0)
             {
                 GameControlManager game = gameControlManagers[0];
+                //walls in Synth Riders are too short for new method
                 if (game.TotalFailWalls - previousFailWalls > 0)
                 {
-                    //screw 3d effect, there's only one "collider" provided by Synth Riders
-                    await patStrapServer.SendMessageAsync(msg1);
-                    await patStrapServer.SendMessageAsync(msg2);
+                    iteration2 = 0;
                 }
-                //MelonLogger.Msg(game.TotalFailWalls); //for debug purposes
                 previousFailWalls = game.TotalFailWalls;
+            }
+            //so I long them out
+            if (iteration2 < 11)
+            {
+                //screw 3d effect, there's only one "collider" provided by Synth Riders
+                await patStrapServer.SendMessageAsync(msg1);
+                await patStrapServer.SendMessageAsync(msg2);
+                iteration2++;
+                iteration = !iteration; //here, not each loop to avoid getting same values
             }
             
             await patStrapServer.SendMessageAsync(msg3); //dummy message to trick PatStrap server that VRC is working
