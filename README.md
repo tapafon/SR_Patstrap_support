@@ -23,6 +23,10 @@ If not, and you did everything correctly, but VRC works and it's also setup corr
 
 TODO
 
+## License
+
+Licensed under [MIT License](https://opensource.org/license/mit), like every other GlobalGameJam stuff by default.
+
 ## Credits
 
 [PatStrap](https://github.com/danielfvm/Patstrap) for the original project. This mod wouldn't exist without it.
