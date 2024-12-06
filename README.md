@@ -3,6 +3,10 @@ A free Melon mod for Synth Riders which adds [Patstrap](https://github.com/danie
 
 How it works? It makes your Patstrap vibrate when you walk into the wall, that's it!
 
+# WARNING!
+
+Versions <=1.0 of this mod only support 2.x versions of the game. 3.x won't work, as internal code logic was changed.
+
 ## Setup
 
 ### PatStrap side
