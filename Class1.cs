@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using MelonLoader;
 using CoreOSC;
 using CoreOSC.IO;
+using Il2Cpp;
 using UnityEngine;
 
 
@@ -40,7 +41,7 @@ namespace SR_Patstrap_support
             var msg1 = new OscMessage(pl, obj);
             var msg2 = new OscMessage(pr, obj);
             var msg3 = new OscMessage(pd, obj);
-
+            
             GameControlManager[] gameControlManagers = Resources.FindObjectsOfTypeAll<GameControlManager>();
 
             if (gameControlManagers.Length > 0)

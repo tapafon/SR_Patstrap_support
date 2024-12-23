@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using SR_Patstrap_support;
 
-[assembly: MelonInfo(typeof(Class1), "SR_Patstrap_support", "1.0.0", "tapafon")]
+[assembly: MelonInfo(typeof(Class1), "SR_Patstrap_support", "2.0.0", "tapafon")]
 [assembly: MelonGame("Kluge Interactive", "SynthRiders")]
 
 // General Information about an assembly is controlled through the following 
@@ -36,5 +36,5 @@ using SR_Patstrap_support;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]

@@ -34,23 +34,32 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
-          <HintPath>E:\Games\SynthRiders\SynthRiders_Data\Managed\Assembly-CSharp.dll</HintPath>
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="CoreOSC">
           <HintPath>E:\CoreOSC-master\CoreOSC\bin\Debug\netstandard2.0\CoreOSC.dll</HintPath>
         </Reference>
+        <Reference Include="Il2CppInterop.Common">
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppInterop.Runtime">
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2Cppmscorlib">
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+        </Reference>
         <Reference Include="MelonLoader">
-          <HintPath>E:\Games\SynthRiders\MelonLoader\net6\MelonLoader.dll</HintPath>
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\net6\MelonLoader.dll</HintPath>
         </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
         <Reference Include="UnityEngine">
-          <HintPath>E:\Games\SynthRiders\SynthRiders_Data\Managed\UnityEngine.dll</HintPath>
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-          <HintPath>E:\Games\SynthRiders\SynthRiders_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+          <HintPath>D:\Games\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
